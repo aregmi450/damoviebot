@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 import os
 # website with movie images
-url = 'https://alternativemovieposters.com/portfolio_tags/tv-series/'
+url = Paste your URL Link here from which you are going to scrape the picture
 
 # download page for parsing
 page = requests.get(url)
