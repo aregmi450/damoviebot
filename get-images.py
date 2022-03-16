@@ -1,9 +1,9 @@
-#model scrapping for moviebot
+# model scrapping for moviebot
 import requests
 from bs4 import BeautifulSoup as bs
 import os
 # website with movie images
-url = Paste your URL Link here from which you are going to scrape the picture
+url = "Paste your URL Link here from which you are going to scrape the picture"
 
 # download page for parsing
 page = requests.get(url)
@@ -11,14 +11,14 @@ soup = bs(page.text, 'html.parser')
 # locate all elements with image tag
 image_tags = soup.findAll("img")
 
-#create directory for images
-##    os.makedirs('movies')
+# create directory for images
+# os.makedirs('movies')
 # move to new directory
-#os.chdir('movies')
+# os.chdir('movies')
 
 # image file name variable
 x = 296
-#writing image
+# writing image
 for image in image_tags:
     try:
         url = image['src']
